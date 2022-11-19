@@ -7,6 +7,15 @@
   text-align: center;
   color: white;
 }
+.movie:hover {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #230052;
+  box-shadow: 0 2px 8px #f7e702;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+}
 
 .movie h2 {
   font-size: 2rem;
