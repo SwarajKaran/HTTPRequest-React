@@ -21,6 +21,7 @@ function App() {
     );
     const data = await response.json();
     console.log(data);
+    fetchMoviesHandler();
   };
   const fetchMoviesHandler = useCallback(async () => {
     setIsLoading(true);
