@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { PuffLoader } from 'react-spinners';
 import MoviesList from './components/MoviesList';
 import './App.css';
+import Loader from './components/Loader';
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -30,11 +30,7 @@ function App() {
       <section>
         {!isLoading && movies.length > 0 && <MoviesList movies={movies} />}
         {!isLoading && movies.length === 0 && <p>No movies found</p>}
-        {isLoading && (
-          <p>
-            <PuffLoader color="#230052" />
-          </p>
-        )}
+        {isLoading && <Loader />}
       </section>
     </React.Fragment>
   );
